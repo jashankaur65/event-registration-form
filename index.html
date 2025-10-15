@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Event Registration Form</title>
+	</head>
+	<body>
+		<form id="eventRegistrationForm" action="#">
+			<h1>Event Registration</h1>
+
+			<!-- Additional form elements will be added here -->
+			<label for="fullName">Full Name:</label>
+			<input type="text" id="fullName" name="fullName" placeholder="Enter your full name" />
+
+			<label for="email">Email Address:</label>
+			<input type="email" id="email" name="email" placeholder="Enter your email" />
+
+			<label for="tickets">Number of Tickets:</label>
+			<input type="number" id="tickets" name="tickets" placeholder="1" min="1" max="10" />
+
+			<label for="eventType">Event Type:</label>
+			<select id="eventType" name="eventType">
+				<option value="">-- Select an event --</option>
+				<option value="concert">Concert</option>
+				<option value="workshop">Workshop</option>
+				<option value="sports">Sports Event</option>
+			</select>
+
+			<label>
+				<input type="checkbox" id="agree" name="agree" />
+				I agree to the terms and conditions
+			</label>
+
+			<label for="comments">Additional Comments:</label>
+			<textarea id="comments" name="comments" placeholder="Any special requests?"></textarea>
+
+			<button type="submit">Register</button>
+		</form>
+		<script src="script.js"></script>
+	</body>
+</html>
+
